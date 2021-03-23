@@ -1,0 +1,48 @@
+body {
+  background-color: rgba(236, 195, 217, 0.5);
+  font-family: Arial;
+}
+form {
+  text-align: center;
+  line-height: 30px;
+  height: 80%;
+  overflow: auto;
+}
+form hr {
+  width: 15%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.3em;
+  color: ffff;
+}
+
+#root {
+  width: 80%;
+  margin: 3% auto;
+  height: 95vh;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  border-radius: 40px;
+}
+#logo {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+.logo-2 {
+  width: 50%;
+  margin: 3% auto;
+  height: 70vh;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+}
+.toppings label,
+.cheesy label {
+  margin-right: 25px;
+}
+.order {
+  margin: 40px 50px;
+  font-size: 18px;
+}
