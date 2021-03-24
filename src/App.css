@@ -31,7 +31,15 @@ h1 {
   margin: auto;
 }
 .logo-2 {
-  width: 50%;
+  width: 40%;
+  margin: 3% auto;
+  height: 70vh;
+  border-radius: 30px;
+  display: block;
+  margin: auto;
+}
+.logo-3 {
+  width: 40%;
   margin: 3% auto;
   height: 70vh;
   border-radius: 30px;
@@ -45,4 +53,17 @@ h1 {
 .order {
   margin: 40px 50px;
   font-size: 18px;
+}
+.login:hover{
+  border: 2px solid black ;
+  background-color: rgb(180, 30, 30);
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.login{
+  color:black;
+  /* font-weight: bold; */
+  weight: 80px;
 }

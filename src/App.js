@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './components/Login';
 import Order from './components/Order';
 import Summary from './components/Summary';
+import Completed from './components/Completed';
 import logo from './burger-logo.png';
 import './App.css';
 
@@ -19,8 +20,9 @@ class App extends React.Component {
       bun: '',
       sauce: '',
       extra: '',
-      loggedIn:false,
-      orderCompleted: false
+      loggedIn: false,
+      orderCompleted: false,
+      completed: false
     };
     // this.usercheck = this.usercheck.bind(this);
     // this.setUserName = this.setUserName.bind(this);
@@ -30,7 +32,7 @@ class App extends React.Component {
   }
 
   usercheck=()=>{
-    if (this.state.username === "abc" && this.state.password === "123" ){
+    if (this.state.username === "Maysa" && this.state.password === "123" ){
       this.setState({
         loggedIn:true
       })
@@ -62,10 +64,17 @@ class App extends React.Component {
     this.setState({ orderCompleted: true })
   }
 
+completePage=(e)=>{
+  e.preventDefault();
+  this.setState({ completed: true })
+}
+
   render(){
     let currComponent;
-    if(this.state.orderCompleted) {
-      currComponent = <Summary order={this.state}/>
+    if(this.state.completed){
+      currComponent = <Completed username={this.state.username} />
+    } else if(this.state.orderCompleted) {
+      currComponent = <Summary order={this.state} lastComplete={this.completePage}/>
     } else if(this.state.loggedIn) {
       currComponent = <Order inputFunction={this.setInput} setComplete={this.completeOrder}/>
     } else {
@@ -78,7 +87,7 @@ class App extends React.Component {
         <img src={logo} alt="Delicious Burger" id="logo" />
         <hr></hr>
         {currComponent}
-        
+        {/* <Completed lastComplete={this.completePage}/> */}
       </div>
     );
   }

@@ -10,6 +10,8 @@ function Summary(props) {
       <p>Extra cheese:              <b>{props.order.cheese}</b></p>
       <p>Sauces:                    <b>{props.order.sauce}</b></p>
       <p>Anything extra:            <b>{props.order.extra}</b></p>
+      {/* <button type="submit">Submit</button> */}
+      <input type="submit" defaultValue="Submit" onClick={props.lastComplete} className="login"/>
     </div>
   )
 }

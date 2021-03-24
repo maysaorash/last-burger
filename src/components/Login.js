@@ -16,7 +16,7 @@ function Login(props) {
       <label htmlFor="user-pw">Password: </label>
       <input id="user-pw" type="password" name="user-pw" onInput={handlePassword} />
       <br/>
-      <input type="button" value="Login" onClick={props.checkUser}/>
+      <input type="button" value="Login" onClick={props.checkUser} className="login" />
       <div><img src={burger} alt="Burger" className="logo-2" /></div>
     </form>
    
