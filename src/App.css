@@ -39,9 +39,9 @@ h1 {
   margin: auto;
 }
 .logo-3 {
-  width: 40%;
-  margin: 3% auto;
-  height: 70vh;
+  width: 50%;
+  margin: 3%x auto;
+  height: 65vh;
   border-radius: 30px;
   display: block;
   margin: auto;
@@ -51,7 +51,7 @@ h1 {
   margin-right: 25px;
 }
 .order {
-  margin: 40px 50px;
+  margin: 40px 300px;
   font-size: 18px;
 }
 .login:hover{
